@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020, jzj
+  ~ Author: jzj
+  ~ Website: www.paincker.com
+  -->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFE"
+    tools:context="com.paincker.widget.roundcornerlayout.RoundCornerLayoutActivity">
+
+    <com.paincker.widget.roundcornerlayout.RoundCornerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp"
+        android:radius="50dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FCC">
+
+            <com.paincker.common.demo.widget.DemoLongTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </ScrollView>
+
+    </com.paincker.widget.roundcornerlayout.RoundCornerLayout>
+</FrameLayout>
