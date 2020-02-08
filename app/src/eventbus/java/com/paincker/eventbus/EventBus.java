@@ -48,10 +48,10 @@ public class EventBus {
      */
     @NonNull
     @SuppressWarnings("unchecked")
-    public <T> T find(Class<T> clazz) {
+    public <Handler> Handler find(Class<Handler> clazz) {
         final Class<?>[] interfaces = new Class[]{clazz};
-        final EventInvocationHandler<T> handler = new EventInvocationHandler<>(clazz);
-        return (T) Proxy.newProxyInstance(clazz.getClassLoader(), interfaces, handler);
+        final EventInvocationHandler<Handler> handler = new EventInvocationHandler<>(clazz);
+        return (Handler) Proxy.newProxyInstance(clazz.getClassLoader(), interfaces, handler);
     }
 
     /**
@@ -62,11 +62,11 @@ public class EventBus {
      */
     @NonNull
     @SuppressWarnings("unchecked")
-    public <T> IterableList<T> findAll(Class<T> clazz) {
-        IterableList<T> list = new IterableList<>();
+    public <Handler> IterableList<Handler> findAll(Class<Handler> clazz) {
+        IterableList<Handler> list = new IterableList<>();
         for (Object handler : mHandlers) {
             if (clazz.isInstance(handler)) {
-                list.add((T) handler);
+                list.add((Handler) handler);
             }
         }
         return list;
