@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020, jzj
+  ~ Author: jzj
+  ~ Website: www.paincker.com
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.paincker.widget.labelview.LabelView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Label"
+        android:textSize="20sp"
+        app:borderColorNormal="#F80"
+        app:borderColorPressed="#D60"
+        app:borderWidth="0.5dp"
+        app:radiusDefault="5dp"
+        app:solidColorNormal="#0000"
+        app:solidColorPressed="#D60"
+        app:textColorNormal="#F80"
+        app:textColorPressed="#FFF" />
+
+</LinearLayout>
