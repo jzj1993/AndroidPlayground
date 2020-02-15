@@ -1,11 +1,10 @@
 package com.paincker.common.demo.widget;
 
 import android.content.Context;
+import android.support.annotation.Nullable;
+import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 import android.view.View;
-
-import androidx.annotation.Nullable;
-import androidx.viewpager.widget.ViewPager;
 
 import com.paincker.common.demo.DemoViewCreator;
 import com.paincker.common.demo.widget.adapter.DemoPagerAdapter;

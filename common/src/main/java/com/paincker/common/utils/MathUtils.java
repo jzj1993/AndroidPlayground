@@ -1,7 +1,7 @@
 package com.paincker.common.utils;
 
 
-import androidx.annotation.FloatRange;
+import android.support.annotation.FloatRange;
 
 /*
  * Copyright (c) 2020, jzj

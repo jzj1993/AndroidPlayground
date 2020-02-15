@@ -1,6 +1,6 @@
 package com.paincker.common.utils;
 
-import androidx.annotation.Nullable;
+import android.support.annotation.Nullable;
 
 /*
  * Copyright (c) 2020, jzj

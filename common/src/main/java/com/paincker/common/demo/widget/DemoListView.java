@@ -1,10 +1,9 @@
 package com.paincker.common.demo.widget;
 
 import android.content.Context;
+import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.widget.ListView;
-
-import androidx.annotation.Nullable;
 
 import com.paincker.common.demo.widget.adapter.DemoListAdapter;
 

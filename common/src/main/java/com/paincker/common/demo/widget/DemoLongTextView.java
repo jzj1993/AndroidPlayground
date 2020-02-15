@@ -3,11 +3,10 @@ package com.paincker.common.demo.widget;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Build;
+import android.support.annotation.Nullable;
+import android.support.annotation.RequiresApi;
 import android.util.AttributeSet;
 import android.widget.TextView;
-
-import androidx.annotation.Nullable;
-import androidx.annotation.RequiresApi;
 
 import com.paincker.common.demo.DemoViewCreator;
 

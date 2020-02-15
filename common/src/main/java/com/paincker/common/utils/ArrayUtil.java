@@ -1,9 +1,8 @@
 package com.paincker.common.utils;
 
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.widget.Adapter;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 
 import java.util.ArrayList;
 import java.util.Collection;

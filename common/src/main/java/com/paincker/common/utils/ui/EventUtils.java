@@ -3,10 +3,9 @@ package com.paincker.common.utils.ui;
 import android.app.Activity;
 import android.os.Handler;
 import android.os.Looper;
+import android.support.annotation.Nullable;
 import android.view.MotionEvent;
 import android.view.View;
-
-import androidx.annotation.Nullable;
 
 import com.paincker.common.utils.log.L;
 

@@ -3,34 +3,34 @@
 
     <declare-styleable name="LabelView">
 
-        <attr name="textColorNormal" format="color"/>
-        <attr name="textColorSelected" format="color"/>
-        <attr name="textColorPressed" format="color"/>
-        <attr name="textColorDisabled" format="color"/>
+        <attr name="textColorNormal" format="color" />
+        <attr name="textColorSelected" format="color" />
+        <attr name="textColorPressed" format="color" />
+        <attr name="textColorDisabled" format="color" />
 
-        <attr name="solidColorNormal" format="color"/>
-        <attr name="solidColorSelected" format="color"/>
-        <attr name="solidColorPressed" format="color"/>
-        <attr name="solidColorDisabled" format="color"/>
+        <attr name="solidColorNormal" format="color" />
+        <attr name="solidColorSelected" format="color" />
+        <attr name="solidColorPressed" format="color" />
+        <attr name="solidColorDisabled" format="color" />
 
-        <attr name="borderColorNormal" format="color"/>
-        <attr name="borderColorSelected" format="color"/>
-        <attr name="borderColorPressed" format="color"/>
-        <attr name="borderColorDisabled" format="color"/>
+        <attr name="borderColorNormal" format="color" />
+        <attr name="borderColorSelected" format="color" />
+        <attr name="borderColorPressed" format="color" />
+        <attr name="borderColorDisabled" format="color" />
 
         <!--<attr name="borderWidth" format="dimension"/>-->
-        <attr name="borderWidth"/>
+        <attr name="borderWidth" />
 
-        <attr name="radiusDefault" format="dimension"/>
-        <attr name="radiusTopLeft" format="dimension"/>
-        <attr name="radiusTopRight" format="dimension"/>
-        <attr name="radiusBottomRight" format="dimension"/>
-        <attr name="radiusBottomLeft" format="dimension"/>
+        <attr name="radiusDefault" format="dimension" />
+        <attr name="radiusTopLeft" format="dimension" />
+        <attr name="radiusTopRight" format="dimension" />
+        <attr name="radiusBottomRight" format="dimension" />
+        <attr name="radiusBottomLeft" format="dimension" />
 
-        <attr name="iconNormal" format="reference"/>
-        <attr name="iconSelected" format="reference"/>
-        <attr name="iconPressed" format="reference"/>
-        <attr name="iconDisabled" format="reference"/>
+        <attr name="iconNormal" format="reference" />
+        <attr name="iconSelected" format="reference" />
+        <attr name="iconPressed" format="reference" />
+        <attr name="iconDisabled" format="reference" />
 
     </declare-styleable>
 

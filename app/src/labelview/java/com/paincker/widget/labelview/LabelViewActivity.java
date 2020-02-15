@@ -3,11 +3,10 @@ package com.paincker.widget.labelview;
 import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
-
-import androidx.annotation.Nullable;
 
 import com.paincker.R;
 import com.paincker.common.demo.DemoViewCreator;

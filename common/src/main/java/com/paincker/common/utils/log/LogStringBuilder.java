@@ -5,14 +5,13 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.support.annotation.AnyRes;
+import android.support.annotation.IdRes;
+import android.support.annotation.IntRange;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.util.Log;
 import android.view.View;
-
-import androidx.annotation.AnyRes;
-import androidx.annotation.IdRes;
-import androidx.annotation.IntRange;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 
 import com.paincker.common.utils.ArrayUtil;
 

@@ -6,8 +6,7 @@ import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.GradientDrawable;
 import android.graphics.drawable.StateListDrawable;
-
-import androidx.annotation.Nullable;
+import android.support.annotation.Nullable;
 
 import com.paincker.R;
 

@@ -1,14 +1,13 @@
 package com.paincker.common.demo.widget.adapter;
 
 import android.content.Context;
+import android.support.v7.widget.RecyclerView;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewParent;
 import android.widget.FrameLayout;
 import android.widget.TextView;
-
-import androidx.recyclerview.widget.RecyclerView;
 
 import com.paincker.common.demo.DemoViewCreator;
 
@@ -29,6 +28,7 @@ public class DemoRecyclerAdapter extends RecyclerView.Adapter<DemoRecyclerAdapte
 
     private final ArrayList<View> mViews = new ArrayList<>();
     private boolean mHorizontal = false;
+
     public DemoRecyclerAdapter() {
     }
 

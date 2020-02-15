@@ -1,6 +1,6 @@
 package com.paincker.eventbus;
 
-import androidx.annotation.NonNull;
+import android.support.annotation.NonNull;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
