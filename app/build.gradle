@@ -19,6 +19,7 @@ android {
     sourceSets {
         def dirs = [
                 'main',
+                'develop',
                 'observablescrollview',
                 'roundcornerlayout',
                 'eventbus',

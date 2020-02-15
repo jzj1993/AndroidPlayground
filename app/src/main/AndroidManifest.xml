@@ -21,6 +21,7 @@
         <activity android:name=".widget.observablescrollview.ObservableScrollViewActivity" />
         <activity android:name=".widget.roundcornerlayout.RoundCornerLayoutActivity" />
         <activity android:name=".widget.labelview.LabelViewActivity" />
+        <activity android:name=".develop.DevelopPanelActivity" />
     </application>
 
 </manifest>
