@@ -22,6 +22,10 @@
         <activity android:name=".widget.roundcornerlayout.RoundCornerLayoutActivity" />
         <activity android:name=".widget.labelview.LabelViewActivity" />
         <activity android:name=".develop.DevelopPanelActivity" />
+        <activity android:name=".widget.scrollvelocity.demo.ScrollVelocityActivity"/>
+        <activity android:name=".widget.scrollvelocity.demo.RecyclerVelocityActivity"/>
+        <activity android:name=".widget.scrollvelocity.demo.ListVelocityActivity"/>
+        <activity android:name=".widget.scrollvelocity.demo.ScrollViewVelocityActivity"/>
     </application>
 
 </manifest>

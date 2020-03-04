@@ -19,7 +19,7 @@ public class L {
 
     public static final boolean ENABLE_LOG = true;
 
-    private static final String PREFIX = "log_";
+    private static final String PREFIX = "demo_";
     private static final String PREFIX_METHOD = "m_";
     private static final int LOG_METHOD_TAG_LEN = 15;
 

@@ -8,6 +8,7 @@ import com.paincker.develop.DevelopPanelActivity;
 import com.paincker.widget.labelview.LabelViewActivity;
 import com.paincker.widget.observablescrollview.ObservableScrollViewActivity;
 import com.paincker.widget.roundcornerlayout.RoundCornerLayoutActivity;
+import com.paincker.widget.scrollvelocity.demo.ScrollVelocityActivity;
 
 /*
  * Copyright (c) 2020, jzj
@@ -25,6 +26,7 @@ public class MainActivity extends BaseActivity {
                 ObservableScrollViewActivity.class,
                 RoundCornerLayoutActivity.class,
                 LabelViewActivity.class,
+                ScrollVelocityActivity.class,
         }));
     }
 }

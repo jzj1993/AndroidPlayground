@@ -33,11 +33,27 @@ import java.util.Collection;
  */
 
 /**
- * 快速创建用于Demo的View
+ * 快速创建Demo展示用的View
+ * <p>
+ * toXXX(): 设置成特定的View
+ * xxx(): 创建特定的View
  */
 public class DemoViewCreator {
 
-    public static final String LONG_TEXT = "Content A\nContent B\nContent C\nContent D\nContent E\nContent F\nContent G\nContent H\nContent I\nContent J\nContent K\nContent L\nContent M\nContent N\nContent O\nContent P\nContent Q\nContent R\nContent S\nContent T";
+    public static final String LONG_TEXT = generateLongText(20);
+    public static final String VERY_LONG_TEXT = generateLongText(26 * 5);
+    public static final int DEMO_LIST_ITEM_COUNT = 30;
+
+    public static String generateLongText(int lines) {
+        StringBuilder b = new StringBuilder();
+        for (int i = 0; i < lines; i++) {
+            b.append("Content ").append((char) ('A' + i % 26));
+            if (i < lines - 1) {
+                b.append('\n');
+            }
+        }
+        return b.toString();
+    }
 
     public static GridView grid(Context context) {
         GridView view = new GridView(context);
@@ -114,21 +130,30 @@ public class DemoViewCreator {
         return textView;
     }
 
-    public static ScrollView textScrollView(Context context, String text) {
-        ScrollView scrollView = new ScrollView(context);
-        addLongTextContent(scrollView, text);
-        return scrollView;
+    public static TextView longText(Context context) {
+        return longText(context, LONG_TEXT);
+    }
+
+    public static TextView longText(Context context, int lines) {
+        return longText(context, generateLongText(lines));
     }
 
     public static TextView longText(Context context, String text) {
         TextView textView = new TextView(context);
-        textView.setText(text);
-        toLongText(textView);
+        toLongText(textView, text);
         return textView;
     }
 
     public static TextView toLongText(TextView textView) {
-        textView.setText(LONG_TEXT);
+        return toLongText(textView, LONG_TEXT);
+    }
+
+    public static TextView toLongText(TextView textView, int lines) {
+        return toLongText(textView, generateLongText(lines));
+    }
+
+    public static TextView toLongText(TextView textView, String text) {
+        textView.setText(text);
         toBigText(textView);
         textView.setLineSpacing(0, 3);
         int padding = DisplayUtils.dp2px(textView.getContext(), 30);
@@ -145,18 +170,41 @@ public class DemoViewCreator {
         return addLongTextContent(viewGroup, LONG_TEXT);
     }
 
-    public static ScrollView textScrollView(Context context) {
-        return addLongTextContent(new ScrollView(context));
+    public static ScrollView longTextScrollView(Context context, String text) {
+        return addLongTextContent(new ScrollView(context), text);
     }
 
-    public static ListView textListView(Context context, int itemCount) {
-        ListView listView = new ListView(context);
-        listView.setAdapter(new DemoListAdapter().addTextItem(context, itemCount));
-        return listView;
+    public static ScrollView longTextScrollView(Context context) {
+        return longTextScrollView(context, LONG_TEXT);
     }
 
     public static ListView textListView(Context context) {
-        return textListView(context, 30);
+        return textListView(context, DEMO_LIST_ITEM_COUNT);
+    }
+
+    public static ListView textListView(Context context, int itemCount) {
+        return toTextListView(new ListView(context), itemCount);
+    }
+
+    public static ListView toTextListView(ListView listView) {
+        return toTextListView(listView, DEMO_LIST_ITEM_COUNT);
+    }
+
+    public static ListView toTextListView(ListView listView, int itemCount) {
+        listView.setAdapter(new DemoListAdapter().addTextItem(listView.getContext(), itemCount));
+        return listView;
+    }
+
+    public static RecyclerView textRecyclerView(Context context) {
+        return textRecyclerView(context, DEMO_LIST_ITEM_COUNT);
+    }
+
+    public static RecyclerView textRecyclerView(Context context, int itemCount) {
+        return toTextRecyclerView(new RecyclerView(context), itemCount);
+    }
+
+    public static <T extends RecyclerView> T toTextRecyclerView(T recyclerView) {
+        return toTextRecyclerView(recyclerView, DEMO_LIST_ITEM_COUNT);
     }
 
     public static <T extends RecyclerView> T toTextRecyclerView(T recyclerView, int itemCount) {
@@ -164,18 +212,6 @@ public class DemoViewCreator {
         recyclerView.setLayoutManager(new LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false));
         recyclerView.setAdapter(new DemoRecyclerAdapter().addTextItem(context, itemCount));
         return recyclerView;
-    }
-
-    public static <T extends RecyclerView> T toTextRecyclerView(T recyclerView) {
-        return toTextRecyclerView(recyclerView, 30);
-    }
-
-    public static RecyclerView textRecyclerView(Context context, int itemCount) {
-        return toTextRecyclerView(new RecyclerView(context), itemCount);
-    }
-
-    public static RecyclerView textRecyclerView(Context context) {
-        return toTextRecyclerView(new RecyclerView(context));
     }
 
     public static View createActivityEntryView(Context context, Class[] classes) {

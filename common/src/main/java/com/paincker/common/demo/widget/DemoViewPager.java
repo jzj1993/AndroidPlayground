@@ -37,7 +37,7 @@ public class DemoViewPager extends ViewPager {
         mViews = new View[]{
                 DemoViewCreator.textRecyclerView(context),
                 DemoViewCreator.textListView(context),
-                DemoViewCreator.textScrollView(context)
+                DemoViewCreator.longTextScrollView(context)
         };
         setAdapter(new DemoPagerAdapter().addViews(mViews));
     }
